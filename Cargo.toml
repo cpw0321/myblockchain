@@ -1,0 +1,21 @@
+[package]
+name = "myblockchain"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [
+    "main",
+    "core",
+    "utils",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+core = { path = "core" }
+utils = { path = "utils" }
+
+[[bin]]
+name = "my"
+path = "main/src/main.rs"
